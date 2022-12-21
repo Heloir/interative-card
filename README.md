@@ -10,7 +10,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Link para o projeto : <a href="https://interative-card.netlify.app" style="color: red"> Interative Card </a>
+Link para o projeto : <a href="https://interative-card.netlify.app"> Interative Card </a>
 
 
 Nesse Projeto Usei as seguintes tecnologias :
