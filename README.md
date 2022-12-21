@@ -15,7 +15,7 @@ Nesse Projeto Usei as seguintes tecnologias :
 - CSS
 - JavaScript
 - Node.js
-- e A LIB : https://github.com/vanilla-masker/vanilla-masker Para usar como máscara nos inputs e passar para a imagem que fica do lado do formulário.
+- e A LIB : <a href="https://github.com/vanilla-masker/vanilla-masker">Vanilla Masker</a> Para usar como máscara nos inputs e passar para a imagem que fica do lado do formulário.
 
 
 Ideia do projeto : [Frontend Mentor] https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw
