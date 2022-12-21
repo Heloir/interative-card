@@ -1,0 +1,14 @@
+{
+  "name": "interactive-card-details-form-main",
+  "version": "1.0.0",
+  "description": "Portifolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Vitor",
+  "license": "ISC",
+  "dependencies": {
+    "vanilla-masker": "^1.2.0"
+  }
+}

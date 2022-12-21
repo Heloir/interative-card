@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  -->
+</head>
+<body>
+
+    <main>
+    <section class="bg-main">
+    <div class="cards">
+      <div class="card-front">
+        <figure>
+          <img src="images/bg-card-front.png"></img>
+          <figcaption id="card-front-logo"><img src="images/card-logo.svg" alt="" id="card-mobile"></img></figcaption>
+            <figcaption id="card-front-number">0000 0000 0000 0000</figcaption>
+            <figcaption id="card-front-name">Jane Applessed</figcaption>
+            <figcaption id="card-front-date"><span id="month">00</span>/<span id="year">00</span></figcaption>
+        </figure>
+        </div>
+        <div class="card-back">
+        <figure>
+          <img src="images/bg-card-back.png" alt=""></img>
+          <figcaption id="card-back-number">000</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+    <form class="card-form">
+      <div class="cardholder">
+        <div class="CARDHOLDER-NAME">
+          <h3>CARDHOLDER NAME</h3>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="CardNameInput" oninput="NameAvaliate()" required></input>
+          <span class="error"></span>
+        </div>
+        <div class="CARD-NUMBER">
+          <h3>CARD NUMBER</h3>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="CardNumberInput" oninput="CardNumberAvaliate()" required></input>
+          <span class="error"></span>
+        </div>
+      </div>
+      <div class="data-info">
+        <div class="date-i">
+          <h3>EXP. DATE (MM/YY)</h3>
+          <input type="text" placeholder="MM" class="date" id="CardMonthInput" oninput="CardDateAvaliate()" required></input>
+          <input type="text" placeholder="YY" class="date" id="CardYearInput" oninput="CardDateAvaliate()" requried></input>
+          <span class="error"></span>
+        </div>
+        <div class="cvc">
+          <h3>CVC</h3>
+          <input type="text" placeholder="e.g. 123" id="cvcinput" oninput="CVCInputAvaliate()" required></input>
+          <span class="error"></span>
+        </div>
+      </div>
+        <button id="card-confirm-button">CONFIRM</button>
+    </form>
+    <!-- Completed state start -->
+    <div class="finish"  style="display: none;">
+      <img src="images/icon-complete.svg" alt="">
+      <h4>THANK YOU!</h4>
+      <p>WE'VE ADDED YOUR CARD DETAILS</p>
+      <button>CONTINUE</button>
+    </div>
+  </main>
+ <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> --> 
+  <script src="./node_modules/vanilla-masker/lib/vanilla-masker.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

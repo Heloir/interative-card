@@ -1,0 +1,393 @@
+
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(fonts/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url(fonts/SpaceGrotesk-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: 'SpaceGrotesk-SemiBold';
+    src: url(fonts/SpaceGrotesk-SemiBold.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+
+   /*PRIMARY*/
+   
+   -Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+   -Red: hsl(0, 100%, 66%); 
+
+
+    /*NEUTRAL*/
+   -White: hsl(0, 0%, 100%);
+   -Light-grayish-violet: hsl(270, 3%, 87%);
+   -Dark-grayish-violet: hsl(279, 6%, 55%);
+   -Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'SpaceGrotesk';
+}
+
+img{
+    width: auto;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+
+.bg-main{
+  background-image: url(images/bg-main-desktop.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+
+
+.card-front{
+    position: relative;
+    left: 30%;
+    right: 0;
+    bottom: 2.5rem;
+    margin: 0;
+}
+
+.card-front figure{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+
+.card-front figcaption{
+    position: absolute;
+}
+
+#card-front-logo{
+    top: 1.25rem;
+    left: 3.125rem;
+    color: white;
+}
+
+#card-front-number{
+    font-size: 1.875rem;
+    color: white;
+    font-family: 'SpaceGrotesk-SemiBold';
+    top: 8.75rem;
+    left: 3.125rem;
+}
+
+#card-front-name{
+    top: 12.5rem;
+    left: 3.125rem;
+    color: white;
+}
+
+#card-front-date{
+    top: 12.5rem;
+    left: 21.875rem;
+    color: white;
+}
+
+.card-back{
+    position: relative;
+    left: 40%;
+}
+
+.card-back figcaption{
+    position: absolute;
+}
+
+#card-back-number{
+    bottom: 7.5rem;
+    left: 21.875rem;
+    color: white;
+}
+
+.card-form{
+    display: flex;
+    position: absolute;
+    max-width: 30%;
+    right: 0;
+    left: 50%;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cardholder input{
+    width: 100%;
+    border-radius: 0.625rem;
+    padding: 0.75rem 0.625rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+.error{
+    display: flex;
+    color: rgb(209, 4, 4);
+}
+
+.active{
+    padding: 0.4em;
+}
+
+.none{
+    display: none;
+}
+
+.date{
+    width: 40%;
+    border-radius: 0.625rem;
+    padding: 0.75rem 0.625rem;
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+}
+
+#cvcinput{
+    border-radius: 0.625rem;
+    padding: 0.75rem 1vw;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+#card-confirm-button{
+    border-radius: 0.625rem;
+    padding: 0.9375rem;
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+
+.card-form h3{
+    margin-top: 1.25rem;
+}
+
+.card-form input::placeholder{
+    font-size: 0.9375rem;
+}
+
+.span-required{
+    color: red;
+    display: none;
+}
+
+.finish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    gap: 1.875rem;
+    font-weight: bolder;
+}
+
+.finish h4{
+    font-size: 2.0625rem;
+}
+
+.finish p{
+    color: rgba(55, 55, 55, 0.574);
+}
+
+.finish button{
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color:  hsl(278, 68%, 11%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+@media (max-width:1144px) {
+    main{
+        width: 200%;
+    }
+    .bg-main{
+        background-image: url(images/bg-main-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-form{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        max-width: 30vw;
+        left:50%;
+        right:0;
+		top:50%;
+		margin-left:-6.875rem;
+		margin-top:-2.5rem;
+    }
+
+    
+#cvcinput{
+    border-radius: 0.625rem;
+    padding-top: 0.75rem;
+    width: 6.25rem;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+.card-front img{
+    width: 40vw;
+}
+.card-front{
+    right: 50%;
+    top: 20vh;
+    z-index: 1;
+}
+#card-mobile{
+    width: 10vw;
+}
+#card-front-number,#card-front-name, #card-front-date{
+    font-size: 2vw;
+    top: 60%;
+
+}
+#card-front-name{
+    top: 78%;
+    
+}
+
+
+#card-front-date{
+    left: 80%;
+    top: 78%;
+    right: 0;
+}
+
+#card-back-number{
+    top: 43%;
+    left: 80%;
+    font-size: 2vw;
+}
+
+
+.card-back img{
+    width: 40vw;
+}
+.card-back{
+    left: 60%;
+}
+
+
+.finish{
+    position: relative;
+    left: -30%;
+    bottom: -50vh;
+}
+
+
+}
+
+@media (max-width:727px) {
+    main{
+        height: 30vh;
+    }
+    .card-form{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        max-width: 15rem;
+        left:50%;
+        right:0;
+		top:50%;
+		margin-left:-6.875rem;
+		margin-top:-2.5rem;
+    }
+
+    .cards{
+        right: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-front img{
+        width: 18.75rem;
+    }
+
+    .card-back img{
+        width: 18.75rem;
+    }
+    .card-back{
+        left: 51%;
+    }
+
+    #card-front-number,#card-front-name, #card-front-date{
+        font-size: 1rem;
+        top: 60%;
+    }
+    #card-front-date{
+        top: 8.125rem;
+    }
+    #card-front-name{
+        top: 8.125rem;
+    }
+    #card-mobile{
+        width: 4rem;
+    }
+    #card-back-number{
+        font-size: 1rem;
+    }
+
+    .finish{
+        position: relative;
+        left: -45%;
+        top: 180%;
+        bottom: -50vh;
+        transition: 0.4s;
+    }
+    
+    .finish h4{
+        font-size: 10vw;
+    }
+
+    .finish button{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
+
